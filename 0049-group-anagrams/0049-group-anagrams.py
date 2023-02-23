@@ -25,10 +25,10 @@ class Solution:
                 #append iterated element to that list in the dictionary
                 result_dictionary[restrung].append(strs[i])
         #iterate through dictionary's values
-        for k in result_dictionary:
+        for k,j in result_dictionary.items():
         
             #append each value to the empty list that you created at the beginning
-            result_list.append(result_dictionary[k])
+            result_list.append(j)
             
         #return that list
         return result_list
